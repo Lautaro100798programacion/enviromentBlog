@@ -7,7 +7,7 @@
         <div class="d-flex justify-content-center">
             <img id="img1" src="../assets/img/yaguareta.png" alt="yaguarete">
             <img id="img2" src="../assets/img/forest.jfif" alt="forest">
-            <img id="img3" src="../assets/img/eficiencia energetica.jpg" alt="eficiencia-energetica">
+            <img id="img3" src="../assets/img/eficienciaenergetica.png" alt="eficiencia-energetica">
         </div>
     </div>
 </template>
