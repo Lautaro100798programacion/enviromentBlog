@@ -16,7 +16,7 @@ import Subscribe from "../components/Subscribe.vue"
 
 <style scoped>
 body {
-  min-height: vh;
+  max-height: auto;
   background-image: url(../assets/img/bañado.jpg);
   background-size: cover;
 }
