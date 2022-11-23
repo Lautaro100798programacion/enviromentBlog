@@ -8,8 +8,8 @@ import heads from '../src/components/Heads.vue'
 
 <template>
    <heads />
-   <headers class="sticky-top"/>
-   <routerView />
+   <headers class="sticky-top "/>
+   <routerView class="pt-2" />
    <footers class="sticky-bottom" />
 </template>
 
