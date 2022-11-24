@@ -3,7 +3,7 @@
 
 <template>
     <div>
-        <h2 class="d-flex justify-content-center">Categories</h2>
+        <h2 class="d-flex justify-content-center mb-3">Categories</h2>
         <div class="d-flex justify-content-center">
             <img id="img1" src="../assets/img/yaguareta.png" alt="yaguarete">
             <img id="img2" src="../assets/img/forest.jfif" alt="forest">
@@ -17,7 +17,7 @@ h2 {
     color:white
 }
 img {
-    height: 20vh !important;
+    height: 15vh !important;
     width: 25vw !important;
 }
 #img1 {

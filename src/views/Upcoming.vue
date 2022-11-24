@@ -3,11 +3,15 @@ import upcomingEvents from '../components/UpcomingEvents.vue'
 </script>
 
 <template>
-    <div>
+    <body>
         <upcomingEvents />
-    </div>
+    </body>
 </template>
 
 <style scoped>
-
+body {
+    max-height: auto;
+    background-image: url(../assets/img/bañado.jpg);
+    background-size: cover;
+}
 </style>

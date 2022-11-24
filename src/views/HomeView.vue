@@ -12,7 +12,7 @@ import Subscribe from "../components/Subscribe.vue"
   <upcoming class="mb-3" />
   <categorias class="mb-3" />
   <featuredPosts class="mb-3"/>
-  <subscribe class="mb-3"/>
+  <subscribe class="pb-3"/>
 </body>
 </template>
 

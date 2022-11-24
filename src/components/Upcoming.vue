@@ -3,11 +3,11 @@
 
 <template>
     <div>
-        <h2 class="d-flex justify-content-center">Upcoming Events</h2>
+        <RouterLink to="/upcoming"><h2 class="d-flex justify-content-center mb-3">Upcoming Events</h2></RouterLink>
         <div class="d-flex justify-content-center">
-            <img id="img1" src="../assets/img/jaguar.png" alt="yaguarete">
-            <img id="img2" src="../assets/img/wildlife.png" alt="forest">
-            <img id="img3" src="../assets/img/forest.png" alt="eficiencia-energetica">
+            <RouterLink to="/upcoming"><img id="img1" src="../assets/img/jaguar.png" alt="yaguarete"></RouterLink>
+            <RouterLink to="/upcoming"><img id="img2" src="../assets/img/wildlife.png" alt="forest"></RouterLink>
+            <RouterLink to="/upcoming"><img src="../assets/img/forest.png" alt="eficiencia-energetica"></RouterLink>
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@ h2 {
     color:white
 }
 img {
-    height: 20vh !important;
+    height: 15vh !important;
     width: 25vw !important;
 }
 #img1 {

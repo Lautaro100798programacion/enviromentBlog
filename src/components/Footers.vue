@@ -8,7 +8,7 @@ import { RouterLink, RouterView} from 'vue-router'
         <img src="../../src/assets/img/cuadrado.png" alt="cuadrado">
         <img src="../../src/assets/img/mas.png" alt="mas">
         <img src="../../src/assets/img/categorias.png" alt="categorias">
-        <img src="../../src/assets/img/trabajo.png" alt="trabajo">
+        <RouterLink to="/work"><img src="../../src/assets/img/trabajo.png" alt="trabajo"></RouterLink>
     </div>
 </template>
 

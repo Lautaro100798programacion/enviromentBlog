@@ -18,7 +18,32 @@ const router = createRouter({
       path: '/upcoming',
       name: 'upcoming',
       component: () => import('../views/Upcoming.vue')
-    }
+    },
+    {
+      path: '/rules',
+      name: 'rules',
+      component: () => import('../views/RulesView.vue')
+    },
+    {
+      path: '/work',
+      name: 'work',
+      component: () => import('../views/Workwithus.vue')
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/LoginView.vue')
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: () => import('../views/ContactView.vue')
+    },
+    {
+      path: '/posts',
+      name: '/posts',
+      component: () => import('../views/PostsView.vue')
+    },
     // {
     //   path: '/about',
     //   name: 'about',
