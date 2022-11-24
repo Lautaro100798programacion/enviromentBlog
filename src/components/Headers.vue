@@ -13,7 +13,7 @@
                         <p>About Us</p>
                     </RouterLink></li>
                     <li><RouterLink to="/rules" class="dropdown-item color d-flex pb-0">
-                        <img src="../assets/img/rulesandpolicies .png" alt="rules and policies" class="imagen">
+                        <img src="../assets/img/rulesandpolicies.png" alt="rules and policies" class="imagen">
                         <p>Rules and Policies</p>
                     </RouterLink></li>
                     <!-- <li><RouterLink to="work" class="dropdown-item color">
