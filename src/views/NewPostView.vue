@@ -1,15 +1,15 @@
 <script setup>
-import posts from '../components/Posteos.vue'
+import newPost from '../components/NewPost.vue'
 </script>
 
 <template>
-    <posts />
+    <newPost />
 </template>
 
 <style scoped>
 body {
   max-height: auto;
-  background-image: url(../assets/img/bañadonoche.png);
+  background-image: url(../assets/img/bañadodia.png);
   background-size: cover;
 }
 </style>

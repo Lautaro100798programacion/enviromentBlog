@@ -5,8 +5,8 @@ import { RouterLink, RouterView} from 'vue-router'
 <template>
     <div class="d-flex justify-content-between footer">
         <RouterLink to="/"><img src="../../src/assets/img/home.png" alt="home"></RouterLink>
-        <img src="../../src/assets/img/cuadrado.png" alt="cuadrado">
-        <img src="../../src/assets/img/mas.png" alt="mas">
+        <RouterLink to="/posts"><img src="../../src/assets/img/cuadrado.png" alt="cuadrado"></RouterLink>
+        <RouterLink to="/newpost"><img src="../../src/assets/img/mas.png" alt="mas"></RouterLink>
         <img src="../../src/assets/img/categorias.png" alt="categorias">
         <RouterLink to="/work"><img src="../../src/assets/img/trabajo.png" alt="trabajo"></RouterLink>
     </div>
