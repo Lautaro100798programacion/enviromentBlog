@@ -1,5 +1,5 @@
 <script setup>
-// import 
+
 </script>
 
 <template>
@@ -33,7 +33,9 @@
 h2 {
     color: white
 }
-
+body{
+   height: 90vh;
+}
 .borde {
     background-color: #336b87;
     border-radius: 1rem;

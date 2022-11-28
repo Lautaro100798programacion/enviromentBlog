@@ -8,7 +8,7 @@ import { RouterLink, RouterView} from 'vue-router'
         <RouterLink to="/posts"><img src="../../src/assets/img/cuadrado.png" alt="cuadrado"></RouterLink>
         <RouterLink to="/newpost"><img src="../../src/assets/img/mas.png" alt="mas"></RouterLink>
         <img src="../../src/assets/img/categorias.png" alt="categorias">
-        <RouterLink to="/work"><img src="../../src/assets/img/trabajo.png" alt="trabajo"></RouterLink>
+       
     </div>
 </template>
 

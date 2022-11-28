@@ -7,11 +7,10 @@ import headers from '../src/components/Headers.vue'
 
 <template>
    <headers class="sticky-top "/>
-   <routerView class="pt-2" />
+   <routerView  />
    <footers class="sticky-bottom" />
 </template>
 
 <style scoped>
-
 </style>
 

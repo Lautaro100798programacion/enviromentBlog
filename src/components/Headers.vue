@@ -3,7 +3,7 @@
 </script>
 
 <template>
-        <div class="d-flex justify-content-between pt-1 header">
+        <div class="d-flex justify-content-between pt-2 header">
             <RouterLink to="/"><img src="../../src/assets/img/icono.png" alt="logo" class="mx-4 mt-1"></RouterLink>
             <div class="dropdown">
                 <h1 class="dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown">Green</h1>
@@ -16,24 +16,33 @@
                         <img src="../assets/img/rulesandpolicies.png" alt="rules and policies" class="imagen">
                         <p>Rules and Policies</p>
                     </RouterLink></li>
+                    <li><RouterLink to="/work" class="dropdown-item color d-flex pb-0">
+                        <img src="../../src/assets/img/trabajo.png" alt="trabajo" class="imagen">
+                        <p>Work with us</p>
+                    </RouterLink></li>
+                    <li><RouterLink to="/contact" class="dropdown-item color d-flex pb-0">
+                        <img src="../assets/img/mensaje.png" alt="mensaje" class="imagen">
+                        <p>Contact us</p>
+                    </RouterLink></li>
                     <!-- <li><RouterLink to="work" class="dropdown-item color">
                         <img src="../assets/img/" alt="">
                         <p>Work with us</p>
                     </RouterLink></li> -->
                 </ul>
             </div>
-            <RouterLink to="/login"><img src="../assets/img/login.png" class="icon" alt="login"></RouterLink>
-            <RouterLink to="/contact"><img class="mx-4 mt-1" src="../assets/img/mensaje.png" alt="mensaje"></RouterLink>
+            <RouterLink to="/login"><img src="../assets/img/perfil.png" class="icon" alt="login"></RouterLink>
+            <RouterLink to="/profile">...</RouterLink>
+            
+            
         </div>
 </template>
 <style scope>
 .header {
     height: 8vh !important;
-    padding-top: 0.2em;
-    background-color: #763626;
+    background-color: #2A3132;
     color: #90afc5;
     padding-left: 0,3em !important;
-    padding-right: 0,5em !important;
+    padding-right: 1.2em !important;
     font-family: moonligth;
 }
 img {
