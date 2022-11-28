@@ -8,6 +8,7 @@ import { RouterLink, RouterView} from 'vue-router'
         <RouterLink to="/posts"><img src="../../src/assets/img/cuadrado.png" alt="cuadrado"></RouterLink>
         <RouterLink to="/newpost"><img src="../../src/assets/img/mas.png" alt="mas"></RouterLink>
         <img src="../../src/assets/img/categorias.png" alt="categorias">
+        <RouterLink to="/shop"><img src="../assets/img/compras.png" alt="compras"></RouterLink>
        
     </div>
 </template>
@@ -15,8 +16,7 @@ import { RouterLink, RouterView} from 'vue-router'
 <style scope>
 .footer {
     height: 6vh;
-    background-color: #763626;
-    color: #90afc5;
+    background-color: #2a3132;;
     font-family: moonligth;
     padding-left: 1em;
     padding-right: 1em;

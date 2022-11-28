@@ -32,8 +32,6 @@
             </div>
             <RouterLink to="/login"><img src="../assets/img/perfil.png" class="icon" alt="login"></RouterLink>
             <RouterLink to="/profile">...</RouterLink>
-            
-            
         </div>
 </template>
 <style scope>
