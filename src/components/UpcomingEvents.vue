@@ -4,7 +4,7 @@
 
 <template>
     <body>
-        <h2 class="d-flex justify-content-center mt-2">Upcoming Events</h2>
+        <h2 class="d-flex justify-content-center pt-2">Upcoming Events</h2>
             <div class="d-flex justify-content-center mt-5">
                 <img class="img1" src="../assets/img/jaguar.png" alt="yaguarete">
                 <img class="img2" src="../assets/img/wildlife.png" alt="forest">
@@ -19,6 +19,9 @@
 </template>
 
 <style scoped>
+body{
+    min-height: 91vh !important;
+}
 h2 {
     color: white
 }

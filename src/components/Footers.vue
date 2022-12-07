@@ -23,8 +23,8 @@ import { RouterLink, RouterView} from 'vue-router'
 }
 
 img {
-    height: 30px !important;
-    width: 50px !important;
+    height: 15px !important;
+    width: 35px !important;
 }
 
 @font-face {

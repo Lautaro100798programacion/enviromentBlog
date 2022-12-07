@@ -10,7 +10,7 @@ import about from "../components/About.vue"
 
 <style scoped>
 body {
-  min-height: vh;
+  min-height: 91vh;
   background-image: url(../assets/img/bañado.jpg);
   background-size: cover;
 }

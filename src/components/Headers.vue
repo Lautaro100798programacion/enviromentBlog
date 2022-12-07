@@ -53,8 +53,8 @@ img {
     margin-right: 1em;
 }
 .color{
-    background-color: #763626 !important;
-    color: #90afc5 !important;
+    background-color: grey !important;
+    color: black !important;
 }
 .icon{
     margin-left: 1em;
