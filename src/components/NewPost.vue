@@ -9,12 +9,14 @@ onMounted(() => {
 const titulo = ref('')
 const texto = ref('')
 const categorias = ref('')
-const fecha = new Date ()
+const fecha1 = new Date()
+const fecha = fecha1.toLocaleString()
 
+const prueba = () => console.log(fecha);
 
 const agregarPosteo = () => {
     const nuevoPosteo = {
-        id: crypto.randomUUID,
+        id: crypto.randomUUID(),
         title: titulo.value,
         text: texto.value,
         category: categorias.value, 
@@ -52,6 +54,7 @@ const agregarPosteo = () => {
                         <option value="energy efficiency">Energy efficiency</option>
                     </select>
                     <button type="submit" class="btn btn-success col-4 mt-4 mb-2 mx-4">Post</button>
+                    <button @click="prueba">Prueba</button>
                 </form>
             </div>
         </div>

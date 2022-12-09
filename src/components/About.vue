@@ -8,7 +8,7 @@
         <h2 class="d-flex justify-content-center">About us</h2>
         <div class="d-flex justify-content-center align-items-center pt-4 mx-3">
             <img src="../assets/img/earthhug.png" alt="cuadrado">
-            <p class="text-white text-center">we are a organization who work to care the earth and save the envieroment.
+            <p class="text-white text-center">we are a organization who work to care the earth and save the enviroment.
             </p>
         </div>
         <div>

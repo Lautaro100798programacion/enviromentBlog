@@ -1,5 +1,4 @@
 import {reactive, ref} from 'vue'
-import { shouldTransformRef } from 'vue/compiler-sfc';
 
 const postState = reactive ({
     posts : [

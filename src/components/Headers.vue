@@ -1,5 +1,5 @@
 <script setup>
-
+import profile from '../store/profileStore';
 </script>
 
 <template>
@@ -30,8 +30,12 @@
                     </RouterLink></li> -->
                 </ul>
             </div>
-            <RouterLink to="/login"><img src="../assets/img/perfil.png" class="icon" alt="login"></RouterLink>
-            <RouterLink to="/profile">...</RouterLink>
+            <div v-if="(profile.perfiles.length === 0)">
+                <RouterLink to="/LoginProfileView"><img src="../assets/img/perfil.png" class="icon" alt="login"></RouterLink>
+            </div>
+            <div v-else>
+                <RouterLink to="/LoginProfileView"><img :src=profile.perfiles.user.photoURL alt="fotoPerfil"></RouterLink>
+            </div>
         </div>
 </template>
 <style scope>

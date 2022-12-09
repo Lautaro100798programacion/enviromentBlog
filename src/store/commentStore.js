@@ -5,7 +5,7 @@ const commentState = reactive ({
 
     ],
     addComment(comment){
-        this.comentarios.push(comment)
+        this.comentarios.unshift(comment)
     }
 })
 
