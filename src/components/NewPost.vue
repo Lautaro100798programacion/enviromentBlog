@@ -1,6 +1,9 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import store from '../store/postStore.js'
+import {addPost} from '../firebase/post.js'
+
+
 
 onMounted(() => {
     console.log(store.posts);
@@ -12,7 +15,7 @@ const categorias = ref('')
 const fecha1 = new Date()
 const fecha = fecha1.toLocaleString()
 
-const prueba = () => console.log(fecha);
+
 
 const agregarPosteo = () => {
     const nuevoPosteo = {
@@ -22,8 +25,8 @@ const agregarPosteo = () => {
         category: categorias.value, 
         date: fecha
     }
-    console.log(nuevoPosteo.id)
-    store.addPost(nuevoPosteo)
+    // store.addPost(nuevoPosteo)
+    addPost(nuevoPosteo)
     titulo.value = ''
     texto.value = ''
     console.log(store.posts)

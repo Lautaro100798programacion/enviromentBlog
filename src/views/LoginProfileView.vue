@@ -1,6 +1,6 @@
 <script setup>
-import loginComponente from "../components/Logins.vue"
-import perfil from "../components/Profile.vue"
+import loginComponente from "../components/Logins.vue";
+import perfil from "../components/Profile.vue";
 import profile from "../store/profileStore";
 </script>
 

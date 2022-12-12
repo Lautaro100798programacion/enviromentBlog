@@ -1,6 +1,8 @@
 <script setup>
 import {loginWithGoogle , logout} from '../firebase/login.js'
 import profile from '../store/profileStore.js'
+
+const localizacion =Geolocation.getCurrentPosition()
 </script>
 
 <template>

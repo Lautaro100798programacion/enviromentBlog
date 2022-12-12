@@ -2,7 +2,10 @@
 import comments from '../store/commentStore.js'
 import store from '../store/postStore.js'
 import { ref, onMounted } from 'vue'
-
+import postFirebase from '../store/postStoreFirebase';
+import {deletePost} from '../firebase/post.js'
+import {addComment, deleteComment} from '../firebase/comentarios.js'
+import commentFirebase from '../store/CommentStoreFirebase.js'
 
 onMounted(() => {
     console.log(store.posts);
@@ -11,13 +14,16 @@ onMounted(() => {
 const fecha1 = new Date()
 const fecha = fecha1.toLocaleString()
 
+// const eliminarPosteo = (id) => {
+//     deletePost(id)
+// }
 
 const coment = ref('')
 // const texto = ref('')
 // const categorias = ref('')
 
-const eliminarPosteo = (id) =>
-store.posts = store.posts.filter(post => post.id !== id)
+// const eliminarPosteo = (id) =>
+// store.posts = store.posts.filter(post => post.id !== id)
 
 const agregarComentario = () => {
     const comentario = {
@@ -25,7 +31,8 @@ const agregarComentario = () => {
         comment: coment.value,
         date: fecha
     }
-    comments.addComment(comentario)
+    addComment(comentario)
+    // comments.addComment(comentario)
     coment.value = ''
     console.log(comments.comentarios)
 }
@@ -39,18 +46,18 @@ const quitLike = () => {
     store.like--;
 }
 
-
+const pruebas = () => {console.log(prueba);}
 </script>
 
 <template>
-
     <body>
-        <div v-for="post in store.posts" :key=post.id class="container-fluid borde pt-2 mb-2">
+
+        <div v-for="post in postFirebase" :key=post.id class="container-fluid borde pt-2 mb-2">
             <div class="row">
                 <div class="d-flex mt-1 align-items-baseline text-white">
                     <img src="../assets/img/messi.png" alt="Perfil" class="mx-2">
                     <p class="mb-0 ">Lionel Messi</p>
-                    <img src="../assets/img/basurero.png" @click="eliminarPosteo(post.id)" alt="basurero" class="offset-5">
+                    <img src="../assets/img/basurero.png" @click="deletePost(post.id)" alt="basurero" class="offset-5">
                 </div>
                 <div class="text-white mt-3">
                     <h5 class="d-flex justify-content-center ">{{ post.title }}</h5>
@@ -85,14 +92,15 @@ const quitLike = () => {
                     <button type="submit" @click="agregarComentario" class="btn btn-success">Comment</button>
                 </div>
             </div>
-            <div v-if="comments.comentarios.length > 0">
-                <div v-for="comentario in comments.comentarios" :key="comentario"
+            <div v-if="commentFirebase.length > 0">
+                <div v-for="comentario in commentFirebase" :key="comentario"
                     class=" row container-fluid borde pt-2 mb-2">
                     <div class="d-flex">
                         <img src="../assets/img/messi.png" class="fotocomentario" alt="fotocomentario">
                         <p class="text-white bg-secondary col-9 mt-2">{{ comentario.comment }}</p>
                     </div>
                     <p class="text-white col-9 offset-2">{{comentario.date}}</p>
+                    <button @click="deleteComment(comentario.id)">Eliminar</button>
                 </div>
             </div>
         </div>
