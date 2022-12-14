@@ -7,7 +7,7 @@ import { RouterLink, RouterView} from 'vue-router'
         <RouterLink to="/"><img src="../../src/assets/img/home.png" alt="home"></RouterLink>
         <RouterLink to="/posts"><img src="../../src/assets/img/cuadrado.png" alt="cuadrado"></RouterLink>
         <RouterLink to="/newpost"><img src="../../src/assets/img/mas.png" alt="mas"></RouterLink>
-        <img src="../../src/assets/img/categorias.png" alt="categorias">
+        <RouterLink to="/category"><img src="../../src/assets/img/categorias.png" alt="categorias"></RouterLink>
         <RouterLink to="/shop"><img src="../assets/img/compras.png" alt="compras"></RouterLink>
        
     </div>

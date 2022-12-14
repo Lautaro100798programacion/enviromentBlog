@@ -4,8 +4,9 @@ import store from '../store/postStore.js'
 import { ref, onMounted } from 'vue'
 import postFirebase from '../store/postStoreFirebase';
 import {deletePost} from '../firebase/post.js'
-import {addComment, deleteComment} from '../firebase/comentarios.js'
-import commentFirebase from '../store/CommentStoreFirebase.js'
+import comment from '../components/Comment.vue'
+import profile from '../store/profileStore.js'
+
 
 onMounted(() => {
     console.log(store.posts);
@@ -25,38 +26,45 @@ const coment = ref('')
 // const eliminarPosteo = (id) =>
 // store.posts = store.posts.filter(post => post.id !== id)
 
-const agregarComentario = () => {
-    const comentario = {
-        id: crypto.randomUUID(),
-        comment: coment.value,
-        date: fecha
-    }
-    addComment(comentario)
-    // comments.addComment(comentario)
-    coment.value = ''
-    console.log(comments.comentarios)
-}
+// const agregarComentario = () => {
+//     const comentario = {
+//         id: crypto.randomUUID(),
+//         comment: coment.value,
+//         date: fecha
+//     }
+//     addComment(comentario)
+//     // comments.addComment(comentario)
+//     coment.value = ''
+//     console.log(comments.comentarios)
+// }
 
-const addLike = () => {
-    store.like++;
-}
 
-const quitLike = () => {
-    if(store.like > 0) 
-    store.like--;
-}
+//             <div v-else>
+//                 <RouterLink to="/LoginProfileView"><img :src=profile.perfiles.user.photoURL alt="fotoPerfil"></RouterLink>
+//             </div>
+//         </div>
 
-const pruebas = () => {console.log(prueba);}
+const prueba = () => console.log(profile);
+
+// const addLike = () => {
+//     store.like++;
+// }
+
+// const quitLike = () => {
+//     if(store.like > 0) 
+//     store.like--;
+// }
+
+
 </script>
 
 <template>
     <body>
-
-        <div v-for="post in postFirebase" :key=post.id class="container-fluid borde pt-2 mb-2">
+        <!-- <div v-for="post in postFirebase" :key=post.id class="container-fluid borde pt-2 mb-2">
             <div class="row">
                 <div class="d-flex mt-1 align-items-baseline text-white">
-                    <img src="../assets/img/messi.png" alt="Perfil" class="mx-2">
-                    <p class="mb-0 ">Lionel Messi</p>
+                    <img :src=post.photo alt="Perfil" class="mx-2">
+                    <p class="mb-0 ">{{post.name}}</p>
                     <img src="../assets/img/basurero.png" @click="deletePost(post.id)" alt="basurero" class="offset-5">
                 </div>
                 <div class="text-white mt-3">
@@ -80,11 +88,13 @@ const pruebas = () => {console.log(prueba);}
                             <img src="../assets/img/comentar.png" alt="comment">
                         </li>
                         <li><img src="../assets/img/share.png" alt="share"></li>
+                        <button @click="prueba">Pruebas</button>
                     </ul>
                 </div>
             </div>
-            <div class="separador"></div>
-            <div class="row">
+            <div class="separador"></div> -->
+            <!-- <comment /> -->
+            <!-- <div class="row">
                 <label for="comment" class="form-label "></label>
                 <input v-model="coment" type="text" class="col-10 mx-4 mt-4 colores text-white" id="comment"
                     name="comment" placeholder="Add your comment..." required>
@@ -102,8 +112,8 @@ const pruebas = () => {console.log(prueba);}
                     <p class="text-white col-9 offset-2">{{comentario.date}}</p>
                     <button @click="deleteComment(comentario.id)">Eliminar</button>
                 </div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
     </body>
 </template>
 
@@ -126,10 +136,6 @@ h2 {
 .imagenpost {
     height: 30vh !important;
     width: 80vw !important;
-}
-
-.colores {
-    background-color: #90AFC5;
 }
 
 li {

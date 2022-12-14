@@ -1,8 +1,7 @@
 <script setup>
 import {loginWithGoogle , logout} from '../firebase/login.js'
-import profile from '../store/profileStore.js'
+import users from '../store/UserStore.js'
 
-const localizacion =Geolocation.getCurrentPosition()
 </script>
 
 <template>
@@ -12,10 +11,10 @@ const localizacion =Geolocation.getCurrentPosition()
             <p class="col-3 offset-2 mt-2 btn btn-danger">Message</p>
             <button type="button" @click="logout" class="btn btn-success col-8 offset-2 mt-3 mb-3">Logout</button>
         </div>
-        <img :src=profile.perfiles.user.photoURL alt="fotoperfil" class="imagenperfil offset-4 mt-3 mb-2">
+        <img :src=users.photoURL alt="fotoperfil" class="imagenperfil offset-4 mt-3 mb-2">
         <div class="mt-0 col-12">
-            <div class="profile-card__name col-12 mx-5 mb-3 text-white">{{profile.perfiles.user.displayName}}</div>
-            <div class="profile-card__txt col-10 mx-4 mb-3 text-white">{{profile.perfiles.user.email}}</div>
+            <div class="profile-card__name col-12 text-center mb-3 text-white">{{users.displayName}}</div>
+            <div class="profile-card__txt col-12 text-center mb-3 text-white">{{users.email}}</div>
             <!-- <div class="profile-card__txt col-10 mx-4 mb-3 text-white">Futbolista argentino. Delantero del PSG. Fanatico de la Argentina, la Ecologia y el Desarrollo Sustentable</div> -->
             <div class="profile-card-loc offset-1">
                 <span class="profile-card-loc__icon">
@@ -24,11 +23,11 @@ const localizacion =Geolocation.getCurrentPosition()
                     </svg>
                 </span>
                 <span class="profile-card-loc__txt">
-                    Doha, Qatar
+                    Santa Fe, Argentina
                 </span>
             </div>
         </div>
-        <div class="col-12 mt-3">
+        <!-- <div class="col-12 mt-3">
             <div class="offset-2 d-flex">
                 <div class="profile-card-inf__item col-6">
                     <div class="profile-card-inf__title text-white">1598</div>
@@ -50,8 +49,8 @@ const localizacion =Geolocation.getCurrentPosition()
                     <div class="profile-card-inf__txt">Donations</div>
                 </div>
             </div>
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
         <div class="profile-card-social">
             <a href="https://www.facebook.com/iaMuhammedErdem" class="profile-card-social__item facebook"
                 target="_blank">
@@ -78,8 +77,8 @@ const localizacion =Geolocation.getCurrentPosition()
                     </svg>
                 </span>
             </a>
-        </div>
-        <svg hidden="hidden">
+        </div> -->
+        <!-- <svg hidden="hidden">
             <defs>
                 <symbol id="icon-location" viewBox="0 0 32 32">
                     <title>location</title>
@@ -117,8 +116,8 @@ const localizacion =Geolocation.getCurrentPosition()
                     </path>
                 </symbol>
             </defs>
-        </svg>
-        </div>
+        </svg> -->
+        <!-- </div> -->
     </body>
 
 </template>

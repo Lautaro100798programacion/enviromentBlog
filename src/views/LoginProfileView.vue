@@ -1,11 +1,11 @@
 <script setup>
 import loginComponente from "../components/Logins.vue";
 import perfil from "../components/Profile.vue";
-import profile from "../store/profileStore";
+import loginout from "../store/loginout";
 </script>
 
 <template>
-    <div v-if="(profile.perfiles.length === 0)">
+    <div v-if="(loginout == 0)">
         <loginComponente />
     </div>
     <div v-else>

@@ -10,9 +10,8 @@
                 <div class="row">
                     <img class="mt-3 p-0" src="../assets/img/yaguarete.png" alt="yaguarete">
                     <div class=" col-8 ">
-                        <h5 class="card-title col-12 offset-1 mt-2">NombredelProyecto</h5>
-                        <p class="card-text col-11 text-justify offset-1">Descripcion: Lorem ipsum dolor, sit amet
-                            consectetur adipisicing elit. Sed</p>
+                        <h5 class="card-title col-12 offset-1 mt-2">Salvemos al yaguarete</h5>
+                        <p class="card-text col-11 text-justify offset-1">Juntos podemos frenar la amenaza de los desmontes y salvar a la especie en la región.</p>
                     </div>
                 </div>
                 <div class="row mt-3 d-flex flex-row">

@@ -1,5 +1,6 @@
 <script setup>
-import profile from '../store/profileStore';
+import loginout from '../store/loginout';
+import users from '../store/UserStore';
 </script>
 
 <template>
@@ -30,11 +31,11 @@ import profile from '../store/profileStore';
                     </RouterLink></li> -->
                 </ul>
             </div>
-            <div v-if="(profile.perfiles.length === 0)">
+            <div v-if="(loginout === 0)">
                 <RouterLink to="/LoginProfileView"><img src="../assets/img/perfil.png" class="icon" alt="login"></RouterLink>
             </div>
             <div v-else>
-                <RouterLink to="/LoginProfileView"><img :src=profile.perfiles.user.photoURL alt="fotoPerfil"></RouterLink>
+                <RouterLink to="/LoginProfileView"><img :src=users.photoURL alt="fotoPerfil"></RouterLink>
             </div>
         </div>
 </template>

@@ -12,8 +12,7 @@
                     <img class="mt-3 p-0" src="../assets/img/remera.png" alt="yaguarete">
                     <div class=" col-8 ">
                         <h5 class="card-title col-12 offset-1 mt-2">Remera Koala Green</h5>
-                        <p class="card-text col-11 text-justify offset-1">Descripcion: Lorem ipsum dolor, sit amet
-                            consectetur adipisicing elit. Sed</p>
+                        <p class="card-text col-11 text-justify offset-1">Remera para hombres y niños de color blanca con imagen de un Koala</p>
                         <div class="d-flex align-items-center">
                             <div class=" col-5 mt-2">
                                 <label for="size" class="mx-2">Size</label>

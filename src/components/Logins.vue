@@ -1,10 +1,5 @@
 <script setup>
 import {loginWithGoogle , logout} from '../firebase/login.js'
-import profile from '../store/profileStore.js'
-
-function prueba () {
-    console.log(profile.perfiles.user.photoURL)
-}
 </script>
 
 <template>
@@ -32,7 +27,6 @@ function prueba () {
             <div class="separador"></div>
             <button type="button" @click="loginWithGoogle" class="btn btn-success col-8 offset-2 mt-3 mb-3">Sign in with Google</button>
             <button type="button" @click="logout" class="btn btn-success col-8 offset-2 mt-3 mb-3">Logout with Google</button>
-            <button @click.prevent="prueba">prueba</button>
             <div class="separador"></div>
             <p class="text-white col-8 offset-2 pt-2">Don´t have a Green account?</p>
             <div class="col-8 offset-3">

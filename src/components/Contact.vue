@@ -1,12 +1,14 @@
 <script setup>
-
+function enviar () {
+    alert("Your request has been successfully received. Thank you!")
+}
 </script>
 
 <template>
 
     <body>
         <h2 class="d-flex justify-content-center mb-3">Contact</h2>
-        <form action="">
+        <form action="" @submit.prevent="enviar">
             <div class="mb-3 input-group align-items-center">
                 <label for="name" class="form-label text-white col-3 mx-2">Name</label>
                 <input type="text" class="form-control col-9 mx-2" id="name">

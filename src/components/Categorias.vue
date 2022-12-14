@@ -3,12 +3,18 @@
 
 <template>
     <div>
-        <h2 class="d-flex justify-content-center mb-3">Categories</h2>
-        <div class="d-flex justify-content-center">
-            <img id="img1" src="../assets/img/yaguareta.png" alt="yaguarete">
-            <img id="img2" src="../assets/img/forest.jfif" alt="forest">
-            <img id="img3" src="../assets/img/eficienciaenergetica.png" alt="eficiencia-energetica">
+        <h2 class="d-flex justify-content-center mb-3">Post</h2>
+        <p class="text-white text-center">You can post and comment about the enviroment and sustainability</p>
+        <div class="d-flex justify-content-around">
+            <div>
+                <RouterLink to="/posts"><button class="btn btn-success">Posts</button></RouterLink>
+            </div>
+            <div>
+                <RouterLink to="/newpost"><button class="btn btn-success">Add Post</button></RouterLink>
+            </div>
         </div>
+        
+
     </div>
 </template>
 
@@ -16,14 +22,5 @@
 h2 {
     color:white
 }
-img {
-    height: 15vh !important;
-    width: 25vw !important;
-}
-#img1 {
-    margin-right: 1.5em;
-}
-#img2 {
-    margin-right: 1.5em;
-}
+
 </style>
