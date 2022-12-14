@@ -12,7 +12,9 @@ onMounted (() => {
 <template>
 
   <body>
-    <PostItemVue v-for="post in postFirebase" :post="post" :key="post.id" />
+    <div>
+      <PostItemVue v-for="post in postFirebase" :post="post" :key="post.id" />
+    </div>
   </body>
 </template>
 
@@ -21,4 +23,5 @@ body {
   background-image: url(../assets/img/bañadonoche.png);
   background-size: cover;
 }
+
 </style>
