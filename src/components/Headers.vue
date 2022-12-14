@@ -25,10 +25,6 @@ import users from '../store/UserStore';
                         <img src="../assets/img/mensaje.png" alt="mensaje" class="imagen">
                         <p>Contact us</p>
                     </RouterLink></li>
-                    <!-- <li><RouterLink to="work" class="dropdown-item color">
-                        <img src="../assets/img/" alt="">
-                        <p>Work with us</p>
-                    </RouterLink></li> -->
                 </ul>
             </div>
             <div v-if="(loginout === 0)">
@@ -50,7 +46,7 @@ import users from '../store/UserStore';
 }
 img {
     height: 5vh !important;
-    /* width: 50px !important; */
+
 }
 .imagen {
     height: 20px !important;

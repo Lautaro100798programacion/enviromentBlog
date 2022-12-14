@@ -57,10 +57,6 @@ h2 {
     color: white
 }
 
-img {
-    height: 20vh !important;
-    width: 25vw !important;
-}
 
 #img1 {
     margin-right: 1.5em;

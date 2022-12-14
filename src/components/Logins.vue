@@ -19,10 +19,10 @@ import {loginWithGoogle , logout} from '../firebase/login.js'
                 <input type="password" class="form-control mx-2" id="contraseña" placeholder="contraseña">
             </div>
             <div class="col-4 offset-5">
-                <button type="submit" class="btn btn-success mb-3">Login</button>
+                <button type="submit" class="btn btn-success mb-3" disabled>Login</button>
             </div>
             <div class="col-7 offset-3 pb-3">
-                <button type="button" @click="recuperarclave" class="btn btn-primary mb-3">I Forgot Password</button>
+                <button type="button" @click="recuperarclave" class="btn btn-primary mb-3" disabled>I Forgot Password</button>
             </div>
             <div class="separador"></div>
             <button type="button" @click="loginWithGoogle" class="btn btn-success col-8 offset-2 mt-3 mb-3">Sign in with Google</button>
@@ -30,7 +30,7 @@ import {loginWithGoogle , logout} from '../firebase/login.js'
             <div class="separador"></div>
             <p class="text-white col-8 offset-2 pt-2">Don´t have a Green account?</p>
             <div class="col-8 offset-3">
-                <button type="button" @click="crearcuenta" class="btn btn-success mb-3">Create account</button>
+                <button type="button" @click="crearcuenta" class="btn btn-success mb-3" disabled>Create account</button>
             </div>
         </form>
     </body>
